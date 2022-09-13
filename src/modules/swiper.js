@@ -18,6 +18,19 @@ const swiper = () => {
     },
   })
 
+  new Swiper('.swiper.service__swiper', {
+    navigation: {
+      nextEl: '.services__arrow--right',
+      prevEl: '.services__arrow--left',
+    },
+    spaceBetween: 30,
+    slidesPerView: 1,
+    breakpoints: {
+      767: {
+        slidesPerView: 2,
+      },
+    },
+  })
 };
 
 export default swiper;
