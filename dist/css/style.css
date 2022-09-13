@@ -1596,10 +1596,10 @@ input.error {
   margin: 0 auto;
 }
 
-.benefits__item {
+/* .benefits__item {
   width: 100%;
   max-width: 185px;
-}
+} */
 
 .benefits-arrows {
   display: flex;
@@ -1665,7 +1665,7 @@ input.error {
   transform: rotate(90deg);
 }
 
-@media (min-width: 576px) {
+/* @media (min-width: 576px) {
   .benefits-wrap {
     width: 100%;
     max-width: 576px;
@@ -1677,4 +1677,4 @@ input.error {
     width: 100%;
     max-width: 576px;
   }
-}
+} */
