@@ -39,6 +39,7 @@ const timer = (deadline) => {
 
     if (getTime.timeRemaining < 0) {
       clearInterval(interval);
+      timerDays.textContent = '00'
       timerHours.textContent = '00';
       timerMinutes.textContent = '00';
       timerSeconds.textContent = '00';
