@@ -7,6 +7,7 @@ const swiper = () => {
       nextEl: '.benefits__arrow--right',
       prevEl: '.benefits__arrow--left',
     },
+    loop: true,
     slidesPerView: 1,
     breakpoints: {
       551: {
