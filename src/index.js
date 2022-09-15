@@ -3,6 +3,7 @@ import smoothScroll from './modules/smoothScroll';
 import timer from './modules/timer';
 import calc from './modules/calc';
 import requestCall from './modules/requestCall';
+import measurerCall from './modules/measurerCall';
 
 swiper();
 smoothScroll();
@@ -11,3 +12,4 @@ if (document.body.classList.contains('balkony')) {
   calc();
 }
 requestCall();
+measurerCall();
