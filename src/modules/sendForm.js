@@ -1,8 +1,10 @@
 import validateForm from './validateForm';
+import { hideModal } from './helpers';
 
 const sendForm = ({ formId, someElem = [] }) => {
   const form = document.querySelector(formId);
   const statusBlock = document.createElement('div');
+  const overlayBlock = document.querySelector('.overlay');
   statusBlock.style.textAlign = 'center';
   const loadText = 'Загрузка...';
   const errorText = 'Ошибка...';
@@ -46,11 +48,16 @@ const sendForm = ({ formId, someElem = [] }) => {
     if (validateForm(formElements)) {
       statusBlock.textContent = loadText;
       form.append(statusBlock);
-
       sendData(formBody)
         .then((data) => {
           statusBlock.textContent = successText;
-          setTimeout(() => (statusBlock.textContent = ''), 3000);
+          setTimeout(
+            () => (
+              (statusBlock.textContent = ''),
+              hideModal(form.closest('.modal'), overlayBlock)
+            ),
+            2000
+          );
           formElements.forEach((input) => {
             if (input.getAttribute('name') !== 'page') {
               input.value = '';
