@@ -22,3 +22,5 @@ maskPhone('[name="phone"]', '+7 (___)-___-__-__');
 validation();
 sendForm({ formId: '#form1', someElem: [{ type: 'input', id: 'calc-total' }] });
 sendForm({ formId: '#form2', someElem: [{ type: 'input', id: 'calc-total' }] });
+sendForm({ formId: '#form3', someElem: [{ type: 'input', id: 'calc-total' }] });
+sendForm({ formId: '#form4', someElem: [{ type: 'input', id: 'calc-total' }] });
