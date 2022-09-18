@@ -24,6 +24,7 @@ const swiper = () => {
       nextEl: '.services__arrow--right',
       prevEl: '.services__arrow--left',
     },
+    loop: true,
     spaceBetween: 30,
     slidesPerView: 1,
     breakpoints: {

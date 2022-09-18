@@ -54,7 +54,7 @@ const sendForm = ({ formId, someElem = [] }) => {
           setTimeout(
             () => (
               (statusBlock.textContent = ''),
-              hideModal(form.closest('.modal'), overlayBlock)
+              form.closest('.modal') ? hideModal(form.closest('.modal'), overlayBlock) : ''
             ),
             2000
           );
